@@ -82,7 +82,7 @@ phpinfo();`
 
 ## History of my commands
   
-    2  exit
+ ```
     3  cd downloads`
     4  sudo apt install apache2
     5  curl http://localhost:80
@@ -91,21 +91,22 @@ phpinfo();`
     8  sudo install php libapache2-mod-php php-mysql
     9  sudo apt install php libapache2-mod-php php-mysql
    
-   10  `php -v`
-   11  `sudo mkdir /var/www/projectlamp`
-   12  `sudo chown -R $USER:$USER /var/www/projectlamp`
-   13  `sudo vi /etc/apache2/sites-available/projectlamp.conf`
-   14  `sudo ls /etc/apache2/sites-available`
-   15  `sudo a2ensite projectlamp`
-   16  `sudo a2dissite 000-default`
-   17  `sudo apache2ctl configtest`
-   18  `sudo systemctl reload apache2`
-   19  `sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html`
-   20  `sudo vim /etc/apache2/mods-enabled/dir.conf`
-   21  `sudo systemctl reload apache2`
+   10  php -v
+   11  sudo mkdir /var/www/projectlamp
+   12  sudo chown -R $USER:$USER /var/www/projectlamp
+   13  sudo vi /etc/apache2/sites-available/projectlamp.conf
+   14  sudo ls /etc/apache2/sites-available
+   15  sudo a2ensite projectlamp
+   16  sudo a2dissite 000-default
+   17  sudo apache2ctl configtest
+   18  sudo systemctl reload apache2
+   19  sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
+   20  sudo vim /etc/apache2/mods-enabled/dir.conf
+   21  sudo systemctl reload apache2
 
-   23  `sudo vim /etc/apache2/mods-enabled/dir.conf`
-   24  `sudo systemctl reload apache2`
-   25  `vim /var/www/projectlamp/index.php`
-   26  `sudo rm /var/www/projectlamp/index.php`
+   23  sudo vim /etc/apache2/mods-enabled/dir.conf
+   24  sudo systemctl reload apache2
+   25  vim /var/www/projectlamp/index.php
+   26  sudo rm /var/www/projectlamp/index.php
    
+```
